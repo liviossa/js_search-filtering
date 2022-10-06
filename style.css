@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+.wrapper {
+}
+.header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.search {
+}
+.search input,
+.search button {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 1px solid #999;
+  margin-right: 16px;
+}
+.search input {
+  min-width: 400px;
+}
+.search button {
+  margin-right: 0;
+}
+
+#search:hover {
+  background-color: #ccc;
+}
+#search-input:focus-visible {
+  outline: none;
+}
+/*Filters */
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+  margin-top: 32px;
+  justify-content: center;
+  grid-gap: 16px;
+}
+.filters fieldset {
+  padding: 2px 8px 6px;
+  border-radius: 50px;
+}
+.filters legend {
+  color: #777;
+}
+.filter {
+  border: none;
+  outline: none;
+  font-weight: 300;
+  width: 100%;
+}
+.content {
+  padding-top: 32px;
+}
+.title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+  grid-gap: 32px;
+}
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+.card_img {
+}
+.card_content {
+  padding-top: 0;
+  padding: 16px;
+}
+.card_title {
+}
+.card_description {
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+.card_info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8px;
+}
+.card label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  font-weight: 300;
+}
+.card_footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.card_stock div {
+  display: inline-block;
+  font-weight: bold;
+}
+.card_stock_empty {
+  color: red;
+  font-weight: bold;
+}
+.card_cost {
+  text-align: right;
+}
+.card_cost div {
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+  padding-right: 17px;
+}
+.card_cost div::after {
+  content: "$";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 300;
+}
